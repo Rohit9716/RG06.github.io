@@ -8,10 +8,17 @@
             <link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
             <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                    <script src="https://use.fontawesome.com/your-embed-code.js"></script> 
+
+
 
             <script type="text/javascript" src="jquery-3.5.0.min.js"></script>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="icon" href="https://www.pinclipart.com/picdir/middle/542-5427722_rg-logo-clipart-graphic-freeuse-stock-rg-logo.png"  type="png">
+            <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<script>(function(w, d) { w.CollectId = "604736068f3c9c446c181376"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
       <title> Rohit Gupta Portfolio</title>
     </head>
     <body>
@@ -31,9 +38,10 @@ font-size: 35px;
 
 #about{
 
-background-color: cadetblue;
-margin-top: 30px;
 padding: 10px;
+text-align: center;
+color: white;
+font-size: 22px;
 
         }
 
@@ -72,6 +80,8 @@ footer{
 }
 .hariom{
   margin-top: 80px;
+  padding-bottom: 80px;
+  vertical-align: middle;
 
 }
 .contact , .col-md-9{
@@ -80,30 +90,71 @@ footer{
 #text{
 padding: 20px;
 margin-top: 20px;
+/* margin-right: 30px; */
+
+padding-bottom: 80px;
 }
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+#number {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+  display: inline;
+  color: white;
+  text-align: center;
+  /*float: center;*/
+}
+#number::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 10;
+  }
+}
+
+}
+
+
      </style> 
 
 
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="">
-                    <div class="container">
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" >
+                    <div class="container"  >
                         <!-- <a class="navbar-brand" href="#">Portfolio. </a> -->
                        <a href="#" class="name"><span> Port </span><span style="color: red;" > folio. </span></a>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" >
                         <span i class="fa fa-bars"></i> </span> Menu
                     </button>
             
-                      <div class="collapse navbar-collapse" id="ftco-nav">
-                        <ul class="navbar-nav ml-auto">
+                      <div class="collapse navbar-collapse" id="ftco-nav" >
+                        <ul class="navbar-nav ml-auto" >
                             <li class="nav-item active"><a href="#index" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="#skill" class="nav-link">Skills</a></li>
-                          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                          <li class="nav-item"><a href="#images" class="nav-link">Project</a></li>
+                           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
                         
                         </ul>
                         
                         
         </nav>
                
+
+               <div style="background-color:#Cccccc;">
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
@@ -121,9 +172,9 @@ margin-top: 20px;
 </center>
  
   </div>
-
 </div>
-<h1 class="text-center" id="about" >  About Me</h1>
+</div>
+<h1  class=" navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="about" >  About Me</h1>
 
 <hr><br> 
 
@@ -144,9 +195,55 @@ margin-top: 20px;
   </div>
   
 
+  <div id="images" style="background-image: url(code.jpg);  padding: 8%; margin-bottom: 80px; ">
+
+<h1 style="color: white; text-align: center; padding-bottom: 100px; "> Project Completed	 </h1>
+
+  <div class="container-fluid" >
+  	<div class="row">
+
+
+  		
+<div  class="col-sm-4 col-xs-6"> <p id="number">
+	<i style="font-size:54px" class="fa">&#xf19a;</i>
+
+	<p style="color: white; padding: 20px;"> WORDPRESS WEBSITE</p>
+
 </div>
+
+
+
+
+<div class="col-sm-4 col-xs-6"> <p id="number">
+		<i style="font-size:54px" class="fa"  > &#xf121;</i>
+			<p style="color: white; padding: 20px;"> HTML WEBSITE </p>	
+
+
+</div>
+
+
+<div  class="col-sm-4 col-xs-6"><p id="number">
+<i style="font-size:54px; " class="fa" >&#xf187;</i>
+<p style="color: white; padding: 20px;">Archive</p>
+
+
+</div>
+
+
+  	</div>
+  </div>
+
+</div>
+</div>
+
 <h1 class="text-center" id="skill">My Skills </h1>
   <p class="text-center">-----What i Know------</p>
+
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-12">
+  			
+  	
   <h4 style="margin-top: 30px; margin-bottom: 30px;"><b>My Creative Skills & Expriences.</b><br></h4>
 
 
@@ -175,7 +272,9 @@ margin-top: 20px;
     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">PHP</div>
   80%</div><br>
 <hr>
-  
+  	</div>
+  	</div>
+  </div>
 
 <h1 class="same"id="contact" >Contact Me </h1>
 <p class="same">----Get in touch----</p>
@@ -186,12 +285,16 @@ margin-top: 20px;
     <div class="col-md-6">
       <b>  <h4 style="margin-top: 30px;">Get in Touch</h4></b>
       <p class="contact"  style="margin-top: 30px;">
-        i hope you are living well This is a my portfolio web page if you have similur job then please contact me.
+        I hope you are living well This is a my portfolio web page if you have similur job then please contact me.
         if any buddy think make a bussiness website on Your bussiness related website then please contact me. i'll make your website,</p>
       </p>   
-        <label for="name">Name</label> :- <b> Rohit Gupta </b> <br>
-  <label for="Gmail_id">Gmail</label> :- <b> Rg2120212@Gmail.com  </b><br>
-  <label for="PHone">Phone no.</label> :- <b>7532090905 , 9582043312 </b><br>
+        <label for="name"></label> <i class="fa fa-male" aria-hidden="true " style="font-size:25px"></i>
+
+
+
+    <b> Rohit Gupta </b> <br>
+  <label for="Gmail_id"> <i class="fa fa-envelope" style="font-size:22px"> </i></label>  <b> Rg2120212@Gmail.com  </b><br>
+  <label for="PHone"> <i class="fa fa-phone"  style="font-size:24px"> </i></label>  <b>7532090905 , 9582043312 </b><br>
   
      <div style="letter-spacing: 15px;">
         <div class="social-media">
@@ -232,7 +335,7 @@ margin-top: 20px;
 
 <footer>
   <p>
-  Created by Rohit | Copyright &copy;  2021 All rights reserved</p>
+  Created by Rohit &#10084;	 | Copyright &copy;  2021 All rights reserved</p>
 </footer>
 
 
@@ -249,3 +352,11 @@ margin-top: 20px;
 });
 </script>
 </html>
+
+
+
+
+
+
+
+
