@@ -3,315 +3,364 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Gupta - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #111;
-            color: #ccc;
-            margin: 0;
-            padding: 0;
-        }
-        a {
-            color: #ff6363;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #ff3c3c;
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+                    <link rel="stylesheet" href="css/all.min.css">
+            <link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                    <script src="https://use.fontawesome.com/your-embed-code.js"></script> 
+
+
+
+            <script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="icon" href="https://www.pinclipart.com/picdir/middle/542-5427722_rg-logo-clipart-graphic-freeuse-stock-rg-logo.png"  type="png">
+            <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<script>(function(w, d) { w.CollectId = "604736068f3c9c446c181376"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+      <title> Rohit Gupta Portfolio</title>
+    </head>
+    <body>
+        <style>
+         
+
+       .col-md-8{
+text-align: center;
+margin-top:  50px ;
+
+ 
+ }
+
+span{
+font-size: 35px;
+}
+
+#about{
+
+padding: 10px;
+text-align: center;
+color: white;
+font-size: 22px;
+
         }
 
-        /* Header */
-        header {
-            background-color: #111;
-            color: #fff;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 999;
-        }
-        header .navbar-nav a {
-            font-size: 18px;
-            padding: 10px 15px;
-            text-transform: capitalize;
-        }
-        header .navbar-nav a:hover {
-            color: #ff6363;
-            border-bottom: 2px solid #ff6363;
+.col-md-9{
+/* width: 600px; */
+/* text-align: center; */
+font-size: 20px;
+
+}
+.same{
+  text-align: center;
+}
+.navbar{
+  text-align: center;
+}
+
+a:hover{
+  font-size: 20px;
+  /* text-decoration: underline; */
+  text-transform: capitalize;
+  padding: 5px;
+}
+
+
+footer{
+          padding: 10px;
+          color: white;
+          background-color: black;
+          text-align: center;
         }
 
-        /* Hero Section */
-        .hero-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: url('background-image.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 80px 0;
-        }
-        .hero-section h2 {
-            font-size: 50px;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        .hero-section p {
-            font-size: 20px;
-            margin-bottom: 40px;
-        }
-        .btn-contact {
-            background-color: #ff6363;
-            padding: 12px 30px;
-            font-size: 18px;
-            border-radius: 30px;
-            color: white;
-            border: none;
-            transition: background-color 0.3s ease;
-        }
-        .btn-contact:hover {
-            background-color: #ff3c3c;
-        }
+.name{
+  color: white;
+  font-size: 25px;
+  padding: 0%;
+}
+.hariom{
+  margin-top: 80px;
+  padding-bottom: 80px;
+  vertical-align: middle;
 
-        /* About Section */
-        .about-section {
-            padding: 80px 0;
-            background-color: #222;
-        }
-        .about-section h2 {
-            font-size: 36px;
-            color: #fff;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .about-section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #ccc;
-            text-align: justify;
-            max-width: 900px;
-            margin: 0 auto;
-        }
+}
+.contact , .col-md-9{
+  line-height: 35px;
+}
+#text{
+padding: 20px;
+margin-top: 20px;
+/* margin-right: 30px; */
 
-        /* Skills Section */
-        .skills-section {
-            padding: 80px 0;
-            background-color: #111;
-        }
-        .skills-section h2 {
-            font-size: 36px;
-            color: #fff;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .skills-section .progress {
-            height: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .skills-section .progress-bar {
-            background-color: #ff6363;
-        }
+padding-bottom: 80px;
+}
 
-        /* Projects Section */
-        .projects-section {
-            padding: 80px 0;
-            background-color: #222;
-        }
-        .projects-section h2 {
-            font-size: 36px;
-            color: #fff;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .projects-section .project {
-            background-color: #333;
-            border-radius: 10px;
-            padding: 40px;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-        .projects-section .project:hover {
-            transform: translateY(-10px);
-        }
-        .projects-section i {
-            font-size: 50px;
-            color: #ff6363;
-            margin-bottom: 20px;
-        }
-        .projects-section .project p {
-            color: #ccc;
-            font-size: 18px;
-        }
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
 
-        /* Contact Section */
-        .contact-section {
-            padding: 80px 0;
-            background-color: #111;
-        }
-        .contact-section h2 {
-            font-size: 36px;
-            color: #fff;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            border: 1px solid #444;
-            background-color: #222;
-            color: #ccc;
-        }
-        .contact-form button {
-            padding: 15px 30px;
-            background-color: #ff6363;
-            border: none;
-            border-radius: 30px;
-            font-size: 18px;
-            color: white;
-            transition: background-color 0.3s ease;
-        }
-        .contact-form button:hover {
-            background-color: #ff3c3c;
-        }
+#number {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+  display: inline;
+  color: white;
+  text-align: center;
+  /*float: center;*/
+}
+#number::after {
+  content: counter(num);
+}
 
-        /* Footer */
-        footer {
-            background-color: #111;
-            color: #fff;
-            padding: 40px 0;
-            text-align: center;
-        }
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 10;
+  }
+}
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-section h2 {
-                font-size: 30px;
-            }
-            .hero-section p {
-                font-size: 16px;
-            }
-            .about-section p {
-                font-size: 16px;
-            }
-            .skills-section h2, .projects-section h2, .contact-section h2 {
-                font-size: 28px;
-            }
-        }
-    </style>
-</head>
-<body>
+}
 
-<!-- Header -->
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a href="#" class="navbar-brand">Rohit Gupta</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+#images{
+	background-image: url(code.jpg);
+		}
 
-<!-- Hero Section -->
-<section id="home" class="hero-section">
-    <h2>Hi, I'm Rohit Gupta</h2>
-    <p>WordPress & Web Developer | Creative Designer</p>
-    <a href="mailto:rg2120212@gmail.com" class="btn-contact">Contact Me</a>
-</section>
+     </style> 
 
-<!-- About Section -->
-<section id="about" class="about-section">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I am a passionate WordPress developer with a deep interest in web technologies. I have extensive experience working on both the front-end and back-end of websites. My goal is to create seamless user experiences and powerful digital solutions for businesses. I love learning and experimenting with new technologies in my free time.</p>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" >
+                    <div class="container"  >
+                        <!-- <a class="navbar-brand" href="#">Portfolio. </a> -->
+                       <a href="#" class="name"><span> Port </span><span style="color: red;" > folio. </span></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" >
+                        <span i class="fa fa-bars"></i> </span> Menu
+                    </button>
+            
+                      <div class="collapse navbar-collapse" id="ftco-nav" >
+                        <ul class="navbar-nav ml-auto" >
+                            <li class="nav-item active"><a href="#index" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="#skill" class="nav-link">Skills</a></li>
+                          <li class="nav-item"><a href="#images" class="nav-link">Project</a></li>
+                           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
+                        
+                        </ul>
+                        
+                        
+        </nav>
+               
+
+               <div style="background-color:#f5f5f5;">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="rohit.png" alt="rohit" width="400px"height="400px" id="index" style="min-width: 150px; margin-top: 20px;" class="card"> <br>
     </div>
-</section>
 
-<!-- Skills Section -->
-<section id="skills" class="skills-section">
-    <div class="container">
-        <h2>My Skills</h2>
-        <div class="progress">
-            <div class="progress-bar" style="width: 90%;">HTML5</div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width: 85%;">CSS3</div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width: 75%;">JavaScript</div>
-        </div>
-        <div class="progress">
-            <div class="progress-bar" style="width: 80%;">WordPress</div>
-        </div>
+    <div class="col-md-6">
+ <center>
+      <div class="hariom" >
+      <p >Hello, My Name is </p> 
+      <p> <b> <h2> Rohit </h2> </b> </p> 
+    <p> </b> i'm  Wordpress & Web Designer  <br> <br><a href="mailto:rg2120212@gmail.com " class="btn btn-info">Contact me</a></p>
     </div>
-</section>
+  </div>
+</center>
+ 
+  </div>
+</div>
+</div>
+<h1  class=" navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="about" >  About Me</h1>
 
-<!-- Projects Section -->
-<section id="projects" class="projects-section">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="project">
-                    <i class="fab fa-wordpress"></i>
-                    <p>WordPress Website Design</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="project">
-                    <i class="fab fa-html5"></i>
-                    <p>HTML5/CSS3 Website</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="project">
-                    <i class="fas fa-archive"></i>
-                    <p>Archival Project</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<hr><br> 
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Subject" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</section>
 
-<!-- Footer -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="rohit.png" alt="" height="300px" width="300px" class="card"> 
+      </div>
+
+    <div class="col-md-9" id="text">
+    <p>Hi My Name is Rohit Gupta i'm lives in <b> Noida </b> and i'm recently complete my <b> Bachelor of Computer Applications (BCA) </b> from singhana university i am a Wordpress developer i love to make a website learn new skill and technology
+      And i have one and half year of exprience on PSQUICKIT  pvt Ltd my last job degination is Software trainee  <b>i have Two Month of exprience on Kirali Web Services my job Degination is Wordpress developer  </b><br> <br> <a href="./Resume.doc" class="btn btn-info"> Download CV</a> </p>
+    <hr>
+     
+</div>
+
+  </div>
+  
+
+  <div id="images" style="background-image: url(code.jpg);  padding: 40px; margin-bottom: 80px; ">
+
+<h1 style="color: white; text-align: center; padding-bottom: 100px; "> Project Completed	 </h1>
+
+  <div class="container-fluid" >
+  	<div class="row">
+
+
+  		
+<div  class="col-sm-4 col-xs-6"> <p id="number">
+	<i style="font-size:54px" class="fa">&#xf19a;</i>
+
+	<p style="color: white; padding: 20px;"> WORDPRESS WEBSITE</p>
+
+</div>
+
+
+
+
+<div class="col-sm-4 col-xs-6"> <p id="number">
+		<i style="font-size:54px" class="fa"  > &#xf121;</i>
+			<p style="color: white; padding: 20px;"> HTML WEBSITE </p>	
+
+
+</div>
+
+
+<div  class="col-sm-4 col-xs-6"><p id="number">
+<i style="font-size:54px; " class="fa" >&#xf187;</i>
+<p style="color: white; padding: 20px;">Archive</p>
+
+
+</div>
+
+
+  	</div>
+  </div>
+
+</div>
+</div>
+
+<h1 class="text-center" id="skill">My Skills </h1>
+  <p class="text-center">-----What i Know------</p>
+
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-12">
+  			
+  	
+  <h4 style="margin-top: 30px; margin-bottom: 30px;"><b>My Creative Skills & Expriences.</b><br></h4>
+
+
+
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML5</div>
+  90%</div> <br>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">CSS3</div>
+  80%</div><br>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">BOOTSTRAP</div>
+  85%</div><br>
+ 
+
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">JQUERY</div>
+  90%</div><br>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">PHOTOSHOP</div>
+  100%</div><br>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">WORDPRESS</div>
+  100%</div><br>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">PHP</div>
+  80%</div><br>
+<hr>
+  	</div>
+  	</div>
+  </div>
+
+<h1 class="same"id="contact" >Contact Me </h1>
+<p class="same">----Get in touch----</p>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <b>  <h4 style="margin-top: 30px;">Get in Touch</h4></b>
+      <p class="contact"  style="margin-top: 30px;">
+        I hope you are living well This is a my portfolio web page if you have similur job then please contact me.
+        if any buddy think make a bussiness website on Your bussiness related website then please contact me. i'll make your website,</p>
+      </p>   
+        <label for="name"></label> <i class="fa fa-user" aria-hidden="true" style="font-size:25px"></i>
+
+
+
+    <b> Rohit Gupta </b> <br>
+  <label for="Gmail_id"> <i class="fas fa-envelope" style="font-size:22px"> </i></label>  <b> Rg2120212@Gmail.com  </b><br>
+  <label for="PHone"> <i class="fa fa-phone"  style="font-size:24px"> </i></label>  <b>7532090905 , 9582043312 </b><br>
+  
+     <div style="letter-spacing: 15px;">
+        <div class="social-media">
+     <p class="mb-0 d-flex">
+     
+      <a href="https://www.facebook.com/profile.php?id=100008283084094" >  <i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+      <i style="font-size:24px" class="fa">&#xf232;</i></a>
+
+              <a href="#" ><span style="font-size:24px" class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+              <i style="font-size:24px" class="fa">&#xf09b;</i><a href="https://www.linkedin.com/in/rohit-gupta-b9548118a/"><span style="font-size:24px" class="fa fa-linkdin"><i class="sr-only">Dribbble</i></span></a>
+              <a href="https://www.linkedin.com/in/rohit-gupta-b9548118a/">  <i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+
+            </p>
+         </div> 
+  <br>
+      </div>
+  </div class="col-md-6">
+  <form class="suggestion">
+    <b> <h4 style="margin-top: 20px;">Message me<br></h4></b>
+   <label for="Name" style="margin-top: 30px;">Name</label> <input type="text" required="required"  placeholder="Enter Your Name">  
+   <label for="Gmail_id">Gmail id</label> <input type="text" required="required"  placeholder="Gmail_id"> <br>
+ <br>
+   <label for="subject ">Subject</label> <input type="text" required="required"  placeholder="Subject" class="form-control"> 
+ <br>
+   <label for="subject "> Message</label>   <textarea name="message" rows="5"  cols="20"  placeholder="Message" required="required" class="form-control"></textarea>
+ 
+ <br>
+   <a href="" class="btn btn-info">Send Message</a>
+   </form>  
+  </div>
+  </div>
+
+
+</div>
+<br>
+
+
 <footer>
-    <p>&copy; 2025 Rohit Gupta. All rights reserved.</p>
+  <p>
+  Created by Rohit &#10084;	 | Copyright &copy;  2021 All rights reserved</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
+ 
+
+
+        </body>
+        
+<script>
+  $(document).ready(function(){
+  $(".navbar").click(function(){
+    $(".collapse").slideToggle();
+  });
+});
+</script>
 </html>
+
+
+
+
+
+
+
+
+
